@@ -5,7 +5,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-const port=process.env.PORT || 8000;
+const port=process.env.PORT || 8000
 
 app.get('/', (req, res) => {
     res.sendFile('/users/ketan chouhan/chatapp/index.html');
